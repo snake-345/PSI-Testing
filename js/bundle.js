@@ -348,7 +348,7 @@ function _slicedToArray(a,f){if(Array.isArray(a))return a;if(Symbol.iterator in 
 		c=void 0,d=void 0,c=a.position().top+g,d=h-k-c;0>d&&(c+=d);d=Math.abs((c-g)/b);f.animate({scrollTop:c},d,e)}}})();
 (function(){var b={type:null,isPreview:null};Moff.ENV={get:function(a){a=void 0===a?null:a;return null===a||b.hasOwnProperty(a)?null===a?$.extend({},b):b[a]:null},set:function(a){if(!$.isPlainObject(a))throw Error("Config should be Plain Object");for(var c in a)if(a.hasOwnProperty(c)){if(!b.hasOwnProperty(c))throw Error('Undeclared ENV variable "'+c+'"');null===b[c]&&(b[c]=a[c])}}}})();
 window.inlineJS.push(function () {
-	Moff.leftovers = [];
+	window.Moff.leftovers = [];
 });
 Moff.modules.create("Misc",function(){function a(){$(b.scope).on("click","a",function(){/^tel:/.test(this.href)?Moff.event.trigger("dsa.clickToCall",{data:{PhoneObject:{number:this.href.replace("tel:","")}}}):window.location.hostname!==this.hostname&&this.hostname.length&&Moff.event.trigger("dsa.externalClick",{data:{ExternalLink:{href:this.href||this.innerText.trim()}}})})}var b=this;this.init=function(){a()}});Moff.modules.initClass("Misc",{scopeSelector:"body"});
 function _toConsumableArray(b){if(Array.isArray(b)){for(var a=0,c=Array(b.length);a<b.length;a++)c[a]=b[a];return c}return Array.from(b)}
