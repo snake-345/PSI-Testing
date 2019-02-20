@@ -10364,3 +10364,5 @@
 		return jQuery;
 	} );
 });
+
+console.log(performance.now());
