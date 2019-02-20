@@ -14,7 +14,12 @@
 	<meta name="theme-color" content="#ec0927">
 
 	<link rel="canonical" href="https://engine6.me/">
-
+	<script>
+		!function(){if('PerformanceLongTaskTiming' in window){var g=window.__tti={e:[]};
+			g.o=new PerformanceObserver(function(l){g.e=g.e.concat(l.getEntries())});
+			g.o.observe({entryTypes:['longtask']})}}();
+	</script>
+	<script async src="js/tti-polyfill.js"></script>
 
 	<!-- Google Tag Manager -->
 	<script>
@@ -1891,6 +1896,11 @@ typeof global?global:this);function onloadCSS(e,c){e.onload=function(){e.onload=
 					'minute': 'Minute'
 				};
 			}			});
+	</script>
+	<script>
+		ttiPolyfill.getFirstConsistentlyInteractive(opts).then((tti) => {
+			console.log(tti);
+		});
 	</script>
 </body>
 </html>
