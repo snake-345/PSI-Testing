@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<h1>Test async</h1>
+	<script>
+		window.onload = function() {
+			var start = performance.now();
+
+			while (true) {
+				if ((performance.now() - start) / 5000 >= 1) { break; }
+			}
+		};
+	</script>
+</body>
+</html>
