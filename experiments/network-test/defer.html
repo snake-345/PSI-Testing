@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Network test</title>
+</head>
+<body>
+	<h1>Network test</h1>
+	<h2>Defer load</h2>
+	<a href="index.html">Original page</a> | <a href="async.html">Async page</a> | <span>Defer page</span>
+	<script defer src="js/heavy.js"></script>
+	<script defer src="js/heavy.js?v=1"></script>
+	<script defer src="js/heavy.js?v=2"></script>
+	<script defer src="js/heavy.js?v=3"></script>
+	<script defer src="js/heavy.js?v=4"></script>
+</body>
+</html>
