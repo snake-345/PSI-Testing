@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Network test</title>
+</head>
+<body>
+	<h1>Network test</h1>
+	<h2>Defer load</h2>
+	<a href="index.html">Original page</a> | <a href="async.html">Async page</a> | <a href="defer.html">Defer page</a> | <span>JS loader page</span>
+	<script>
+		var files = [
+			'js/heavy.js',
+			'js/heavy.js?v=1',
+			'js/heavy.js?v=2',
+			'js/heavy.js?v=3',
+			'js/heavy.js?v=4',
+		];
+
+		for (var i = 0, l = files.length; i < l; i++) {
+			var script = document.createElement('script');
+			script.async = true;
+			script.src = files[i];
+			document.body.appendChild(script);
+		}
+	</script>
+</body>
+</html>
