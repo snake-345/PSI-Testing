@@ -9,7 +9,7 @@
 console.log('hello from entry 1');
 
 window.pageStructure.modules.forEach(moduleConfig => {
-    module.import(`./${moduleConfig.name}-es6.js`)
+    import(`./${moduleConfig.name}-es6.js`)
         .then(module => {
             console.log('module', module);
         })
