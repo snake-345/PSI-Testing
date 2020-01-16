@@ -19,8 +19,8 @@
 			}
 		}
 	}
-	// document.body.innerHTML += '<p>heavy loaded</p>';
-	sleep(0.01);
+	document.body.innerHTML += '<p>heavy loaded</p>';
+	// sleep(0.01);
 	console.log('heavy.js loaded');
 
 }());
