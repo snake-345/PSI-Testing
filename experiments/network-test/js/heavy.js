@@ -19,7 +19,7 @@
 			}
 		}
 	}
-	sleep(0.3);
+	sleep(0.01);
 	document.body.innerHTML += '<p>heavy loaded</p>';
 	console.log('heavy.js loaded');
 
