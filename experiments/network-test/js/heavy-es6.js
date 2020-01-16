@@ -12,5 +12,16 @@ export function helloWorld() {
 
 	return "Hello World, I am a module!";
 }
+function sleep(seconds) {
+    var start = new Date().getTime(),
+        delay = seconds * 1000;
+
+    while (true) {
+        if ((new Date().getTime() - start) > delay) {
+            break;
+        }
+    }
+}
+sleep(0.3);
 console.log('heavy.js loaded');
-document.body.innerHTML += 'heavy 0 loaded';
+document.body.innerHTML += '<p>heavy 0 loaded</p>';
