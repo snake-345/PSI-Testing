@@ -7,6 +7,32 @@
 <body>
 	<h1>Network test</h1>
 	<h2>ES6 modules</h2>
+	<script>
+        window.pageStructure = {
+            modules: [
+                {
+                    name: 'heavy',
+                    config: { a: 123 },
+                },
+                {
+                    name: 'heavy1',
+                    config: { b: 567 },
+                },
+                {
+                    name: 'heavy2',
+                    config: { b: 567 },
+                },
+                {
+                    name: 'heavy3',
+                    config: { b: 567 },
+                },
+                {
+                    name: 'heavy4',
+                    config: { b: 567 },
+                },
+            ],
+	}
+    </script>
 	<a href="index.html">Original page</a> | <a href="async.html">Async page</a> | <span>ES6 modules page</span> |
 	<a href="defer.html">Defer page</a> | <a href="js-loader.html">JS loader page</a> |
 	<a href="js-loader-hardcore.html">Hardcore JS loader page</a>
