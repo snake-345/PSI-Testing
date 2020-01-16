@@ -13,8 +13,35 @@
 </head>
 <body>
     system loader
-    <script src="entry.js" type="systemjs-module"></script>
-    <script src="entry2.js" type="systemjs-module"></script>
+    <!-- <script src="heavy-es6.js" type="systemjs-module" async onload="console.log('onload callback');"></script>
+    <script src="heavy1-es6.js" type="systemjs-module" async></script>
+    <script src="heavy2-es6.js" type="systemjs-module" async></script>
+    <script src="heavy3-es6.js" type="systemjs-module" async></script>
+    <script src="heavy4-es6.js" type="systemjs-module" async></script> -->
 
+    <script>
+        ['./heavy-es6.js', './heavy1-es6.js', './heavy2-es6.js', './heavy3-es6.js', './heavy4-es6.js'].forEach(url => {
+            System.import(url).then(function(module) {
+                console.log('onload callback', module);
+            });
+        }); 
+
+
+        // System.import('./heavy-es6.js').then(function(module) {
+        //     console.log('onload callback', module);
+        // });
+        // System.import('./heavy1-es6.js').then(function(module) {
+        //     console.log('onload callback', module);
+        // });
+        // System.import('./heavy2-es6.js').then(function(module) {
+        //     console.log('onload callback', module);
+        // });
+        // System.import('./heavy3-es6.js').then(function(module) {
+        //     console.log('onload callback', module);
+        // });
+        // System.import('./heavy4-es6.js').then(function(module) {
+        //     console.log('onload callback', module);
+        // });
+    </script>
 </body>
 </html>
