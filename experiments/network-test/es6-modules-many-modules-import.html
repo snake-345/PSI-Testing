@@ -10,18 +10,18 @@
 	<a href="index.html">Original page</a> | <a href="async.html">Async page</a> | <span>ES6 modules page</span> |
 	<a href="defer.html">Defer page</a> | <a href="js-loader.html">JS loader page</a> |
 	<a href="js-loader-hardcore.html">Hardcore JS loader page</a>
-	<script>
-		// ['./js/heavy-es6.js', './js/heavy1-es6.js', './js/heavy2-es6.js', './js/heavy3-es6.js', './js/heavy4-es6.js'].forEach(url => {
-		// 	import(url)
-        //             .then(module => {
-        //                 console.log('module', module);
-        //             })
-        //             .catch(error => {
-        //                 console.log('error', error);
-		// 			});
-		// 	})
+	<script async type='module'>
+		['./js/heavy-es6.js', './js/heavy1-es6.js', './js/heavy2-es6.js', './js/heavy3-es6.js', './js/heavy4-es6.js'].forEach(url => {
+			import(url)
+                    .then(module => {
+                        console.log('module', module);
+                    })
+                    .catch(error => {
+                        console.log('error', error);
+					});
+			})
 	</script>
-	<script>
+	<!-- <script>
 			import('./js/heavy-es6.js').then(module => {
 					console.log('module', module);
 			});
@@ -38,7 +38,7 @@
 					console.log('module', module);
 			});
 
-	</script>
+	</script> -->
 
 	<!-- <script type="module" async src="js/heavy-es6.js" onload="console.log('onload callback');"></script>
 	<script type="module" async src="js/heavy1-es6.js" onload="console.log('onload callback');"></script>
