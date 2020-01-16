@@ -22,6 +22,17 @@ System.register([], function (exports) {
 			}
 			// sleep(0.01);
 			document.body.innerHTML += '<p>heavy 2 loaded</p>';
+			function sleep(seconds) {
+				var start = new Date().getTime(),
+					delay = seconds * 1000;
+			
+				while (true) {
+					if ((new Date().getTime() - start) > delay) {
+						break;
+					}
+				}
+			}
+			sleep(0.01);
 			console.log('heavy2.js loaded');
 
 		}

@@ -21,7 +21,17 @@ System.register([], function (exports) {
 
 			}
 			document.body.innerHTML += '<p>heavy 1 loaded</p>';
-			// sleep(0.01);
+			function sleep(seconds) {
+				var start = new Date().getTime(),
+					delay = seconds * 1000;
+			
+				while (true) {
+					if ((new Date().getTime() - start) > delay) {
+						break;
+					}
+				}
+			}
+			sleep(0.01);
 			console.log('heavy1.js loaded');
 
 		}

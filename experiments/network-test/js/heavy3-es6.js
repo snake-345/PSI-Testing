@@ -19,5 +19,5 @@ function sleep(seconds) {
     }
 }
 document.body.innerHTML += '<p>heavy 3 loaded</p>';
-// sleep(0.01);
+sleep(0.01);
 console.log('heavy3.js loaded');
