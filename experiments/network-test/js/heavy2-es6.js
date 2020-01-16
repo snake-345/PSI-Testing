@@ -23,6 +23,6 @@ function sleep(seconds) {
         }
     }
 }
-sleep(0.005);
+sleep(0.01);
 // document.body.innerHTML += '<p>heavy 2 loaded</p>';
 console.log('heavy2.js loaded');
