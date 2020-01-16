@@ -12,8 +12,33 @@
     <script src="s.min.js"></script>
 </head>
 <body>
+    <script>
+        window.pageStructure = {
+            modules: [
+                {
+                    name: 'heavy',
+                    config: { a: 123 },
+                },
+                {
+                    name: 'heavy1',
+                    config: { b: 567 },
+                },
+                {
+                    name: 'heavy2',
+                    config: { b: 567 },
+                },
+                {
+                    name: 'heavy3',
+                    config: { b: 567 },
+                },
+                {
+                    name: 'heavy4',
+                    config: { b: 567 },
+                },
+            ],
+	}
+    </script>
     system loader
     <script src="entry.js" type="systemjs-module"></script>
-
 </body>
 </html>

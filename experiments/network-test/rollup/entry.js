@@ -1,11 +1,26 @@
-System.register(['./heavy-es6.js', './heavy1-es6.js', './heavy2-es6.js', './heavy3-es6.js', './heavy4-es6.js'], function () {
-	'use strict';
-	return {
-		setters: [function () {}, function () {}, function () {}, function () {}, function () {}],
-		execute: function () {
+System.register([], function (exports, module) {
+    'use strict';
+    return {
+        execute: function () {
 
-			console.log('hello from entry 1');
+            // import './heavy-es6.js';
+            // import './heavy1-es6.js';
+            // import './heavy2-es6.js';
+            // import './heavy3-es6.js';
+            // import './heavy4-es6.js';
 
-		}
-	};
+            console.log('hello from entry 1');
+
+            window.pageStructure.modules.forEach(moduleConfig => {
+                module.import(`./${moduleConfig.name}-es6.js`)
+                    .then(module => {
+                        console.log('module', module);
+                    })
+                    .catch(error => {
+                        console.log('error', error);
+                    });
+            });
+
+        }
+    };
 });
