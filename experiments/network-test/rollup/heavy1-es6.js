@@ -20,7 +20,7 @@ System.register([], function (exports) {
 				return "Hello World, I am a module!";
 
 			}
-			document.body.innerHTML += '<p>heavy 1 loaded</p>';
+			
 			function sleep(seconds) {
 				var start = new Date().getTime(),
 					delay = seconds * 1000;
@@ -32,6 +32,7 @@ System.register([], function (exports) {
 				}
 			}
 			sleep(0.01);
+			document.body.innerHTML += '<p>heavy 1 loaded</p>';
 			console.log('heavy1.js loaded');
 
 		}

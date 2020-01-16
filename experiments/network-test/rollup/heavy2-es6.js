@@ -21,7 +21,7 @@ System.register([], function (exports) {
 
 			}
 			// sleep(0.01);
-			document.body.innerHTML += '<p>heavy 2 loaded</p>';
+			
 			function sleep(seconds) {
 				var start = new Date().getTime(),
 					delay = seconds * 1000;
@@ -33,6 +33,7 @@ System.register([], function (exports) {
 				}
 			}
 			sleep(0.01);
+			document.body.innerHTML += '<p>heavy 2 loaded</p>';
 			console.log('heavy2.js loaded');
 
 		}
