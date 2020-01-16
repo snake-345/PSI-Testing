@@ -219,7 +219,7 @@ eval("var map = {\n\t\"./heavy0-es6.js\": [\n\t\t\"./assets/heavy0-es6.js\",\n\t
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("window.pageStructure.modules.forEach(function (moduleConfig) {\n  console.log('module', moduleConfig);\n  __webpack_require__(\"./assets lazy recursive ^\\\\.\\\\/.*\\\\-es6\\\\.js$\")(\"./\".concat(moduleConfig.name, \"-es6.js\")).then(function (module) {\n    // module.default.init(moduleConfig.config);\n    // module.default();\n    console.log('module', module);\n  });\n});\n\n//# sourceURL=webpack:///./assets/heavy.js?");
+eval("window.pageStructure.modules.forEach(function (moduleConfig) {\n  console.log('module', moduleConfig);\n  __webpack_require__(\"./assets lazy recursive ^\\\\.\\\\/.*\\\\-es6\\\\.js$\")(\"./\".concat(moduleConfig.name, \"-es6.js\")).then(function (module) {\n    // module.default.init(moduleConfig.config);\n    module.helloWorld();\n    console.log('module', module);\n  });\n});\n\n//# sourceURL=webpack:///./assets/heavy.js?");
 
 /***/ }),
 
