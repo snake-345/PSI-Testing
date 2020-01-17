@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Iterators</title>
+</head>
+<body>
+<h1>Iterators test</h1>
+<script>
+	testNativeFor();
+	testNativeForEach();
+
+	function testNativeFor() {
+		for (let i = 0; i < 5; i++) {
+			setTimeout(function() {
+				sleep(50);
+			}, 0);
+		}
+	}
+
+	function testNativeForEach() {
+		[1, 2, 3, 4, 5].forEach(function() {
+			setTimeout(function() {
+				sleep(50);
+			}, 0);
+		});
+	}
+
+	function sleep(delay) {
+		var start = new Date().getTime();
+
+		while (true) {
+			if ((new Date().getTime() - start) > delay) {
+				break;
+			}
+		}
+	}
+</script>
+</body>
+</html>
