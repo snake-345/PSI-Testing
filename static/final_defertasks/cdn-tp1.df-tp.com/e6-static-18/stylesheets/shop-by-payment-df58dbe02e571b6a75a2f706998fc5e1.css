@@ -1,0 +1,26 @@
+.mod-shop-by-payment-theme1 .slider-wrapper {
+    margin-bottom: 25px
+}
+
+@media (min-width:768px) {
+    .mod-shop-by-payment-theme1 .slider-wrapper {
+        margin-bottom: 15px
+    }
+}
+
+.mod-shop-by-payment-theme1 .slider-max,
+.mod-shop-by-payment-theme1 .slider-min {
+    font-weight: 700;
+    font-size: 1.133rem
+}
+
+.mod-shop-by-payment-theme1 .monthly-payment {
+    white-space: nowrap;
+    font-size: 13px;
+    color: #888;
+    font-weight: 400
+}
+
+#ashop-by-payment-df58dbe02e571b6a75a2f706998fc5e1 {
+    width: 0
+}

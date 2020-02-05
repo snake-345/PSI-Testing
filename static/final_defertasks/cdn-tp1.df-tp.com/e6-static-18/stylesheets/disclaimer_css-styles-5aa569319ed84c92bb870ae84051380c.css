@@ -1,0 +1,19 @@
+.disclaimer-ref {
+    margin-left: 2px
+}
+
+.disclaimer-ref__link {
+    color: #db2121;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer
+}
+
+.disclaimer-ref__link:active,
+.disclaimer-ref__link:hover {
+    color: #a10000
+}
+
+#adisclaimer_css-styles-5aa569319ed84c92bb870ae84051380c {
+    width: 0
+}

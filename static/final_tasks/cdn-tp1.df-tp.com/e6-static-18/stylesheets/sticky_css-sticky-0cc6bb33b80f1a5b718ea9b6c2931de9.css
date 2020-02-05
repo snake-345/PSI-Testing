@@ -1,0 +1,25 @@
+body {
+    overflow-anchor: none
+}
+
+.sticky-container.__sticky-ready {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+.sticky-container.__fixed {
+    position: fixed;
+    top: 0;
+    z-index: 200
+}
+
+.sticky-placeholder.__transition {
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease
+}
+
+#asticky_css-sticky-0cc6bb33b80f1a5b718ea9b6c2931de9 {
+    width: 0
+}

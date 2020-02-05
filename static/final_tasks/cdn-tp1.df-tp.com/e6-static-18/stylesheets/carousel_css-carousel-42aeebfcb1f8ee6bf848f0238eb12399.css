@@ -1,0 +1,441 @@
+.carousel {
+    position: relative;
+    overflow: hidden
+}
+
+.carousel_center {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.carousel_loaded .carousel__item {
+    display: block
+}
+
+.carousel_loaded .carousel__controls .carousel__arrow,
+.carousel_loaded .carousel__controls .carousel__dots {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}
+
+.carousel_loaded .carousel__arrow,
+.carousel_loaded .carousel__dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.carousel_loaded .carousel__arrow.carousel__control-hidden,
+.carousel_loaded .carousel__dots.carousel__control-hidden {
+    display: none
+}
+
+.carousel_loaded .carousel__inner {
+    -webkit-box-pack: initial;
+    -webkit-justify-content: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+    width: 300000px
+}
+
+.carousel_vertical .carousel__inner {
+    display: block
+}
+
+.carousel__inner {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.carousel__inner_align-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.carousel__inner_align-right {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.carousel__item {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    z-index: 2
+}
+
+.carousel__item_full-width {
+    display: none
+}
+
+.carousel__item_full-width:first-child {
+    display: block;
+    width: 100%
+}
+
+.carousel__item_visible {
+    z-index: 1
+}
+
+.carousel__item-image,
+.carousel__item-video {
+    width: 100%;
+    height: auto
+}
+
+.carousel__item-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.carousel__item-video-wrapper {
+    overflow: hidden
+}
+
+.carousel__item-video-wrapper_ratio {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0
+}
+
+.carousel__disclaimer-popup-valid {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 10px
+}
+
+.carousel__disclaimer-link {
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    bottom: 0;
+    margin-bottom: 2.5%;
+    color: #fff;
+    line-height: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+@media (min-width:768px) {
+    .carousel__disclaimer-link {
+        right: 20px
+    }
+}
+
+.carousel__disclaimer-link-icon {
+    position: relative;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 3px
+}
+
+@media (min-width:768px) {
+    .carousel__disclaimer-link-icon {
+        font-size: 30px;
+        top: -2px
+    }
+}
+
+.carousel__video-controls {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 10;
+    font-size: 30px;
+    border: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+@media (min-width:768px) {
+    .carousel__video-controls {
+        bottom: 10px;
+        left: 20px
+    }
+}
+
+.carousel__video-controls_play-pause {
+    cursor: pointer;
+    display: inline-block
+}
+
+.carousel__video-controls_play-pause.__play .carousel__video-controls_pause-icon {
+    display: none
+}
+
+.carousel__video-controls_play-pause.__pause .carousel__video-controls_play-icon {
+    display: none
+}
+
+.carousel__video-controls_muted-unmuted {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px
+}
+
+.carousel__video-controls_muted-unmuted .carousel__video-controls_unmuted-icon {
+    margin-left: -3px
+}
+
+.carousel__video-controls_muted-unmuted.__muted .carousel__video-controls_unmuted-icon {
+    display: none
+}
+
+.carousel__video-controls_muted-unmuted.__unmuted .carousel__video-controls_muted-icon {
+    display: none
+}
+
+.carousel__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.carousel__content-inner {
+    color: #fff;
+    line-height: 1.1;
+    padding: 0 30px;
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .carousel__content-inner {
+        padding: 0 50px
+    }
+}
+
+.carousel__content-link {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.carousel__content-title {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 5px
+}
+
+@media (min-width:400px) {
+    .carousel__content-title {
+        font-size: 24px
+    }
+}
+
+@media (min-width:768px) {
+    .carousel__content-title {
+        font-size: 64px
+    }
+}
+
+.carousel__content-subtitle {
+    font-size: 15px
+}
+
+@media (min-width:768px) {
+    .carousel__content-subtitle {
+        font-size: 32px
+    }
+}
+
+.carousel__content-buttons {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-top: 10px
+}
+
+@media (min-width:768px) {
+    .carousel__content-buttons {
+        margin-top: 20px
+    }
+}
+
+@media (max-width:767px) {
+    .carousel__content-buttons .__small-on-mobile {
+        font-size: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+}
+
+.carousel__arrow,
+.carousel__dots {
+    display: none
+}
+
+.carousel__arrow {
+    position: absolute;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 50px;
+    bottom: 50px;
+    font-size: 0;
+    outline: 0;
+    width: 35px;
+    text-align: center;
+    color: #444;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer
+}
+
+@media (min-width:768px) {
+    .carousel__arrow {
+        width: 50px
+    }
+}
+
+.carousel__arrow:focus,
+.carousel__arrow:hover {
+    color: #000
+}
+
+.carousel__arrow_small {
+    width: 30px
+}
+
+.carousel__arrow_small .slider-arrow_icon {
+    font-size: 30px
+}
+
+.carousel__arrow_prev {
+    left: 0
+}
+
+.carousel__arrow_next {
+    right: 0
+}
+
+.carousel__arrow-icon {
+    font-size: 50px
+}
+
+.carousel__dots {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3%;
+    left: 80px;
+    right: 80px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.carousel__dots_hided {
+    display: none
+}
+
+.carousel__dot {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+    background: #bbb
+}
+
+.carousel__dot:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px
+}
+
+.carousel__dot:hover,
+.carousel__dot_active {
+    background: #444
+}
+
+.carousel__controls {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.carousel__controls .carousel__arrow,
+.carousel__controls .carousel__dots {
+    position: static;
+    vertical-align: middle
+}
+
+.carousel__controls .carousel__dots {
+    margin: 2px 12px 0
+}
+
+.carousel__controls .carousel__arrow {
+    width: auto
+}
+
+.carousel__controls .carousel__arrow-icon {
+    font-size: 34px
+}
+
+.carousel__slide-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+#acarousel_css-carousel-42aeebfcb1f8ee6bf848f0238eb12399 {
+    width: 0
+}

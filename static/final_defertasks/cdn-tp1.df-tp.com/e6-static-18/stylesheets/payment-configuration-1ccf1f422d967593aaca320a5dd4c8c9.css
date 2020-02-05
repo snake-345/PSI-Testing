@@ -1,0 +1,26 @@
+.mod-payment-configuration-theme1 {
+    margin-bottom: 0
+}
+
+.mod-payment-configuration-theme1 .custom-select,
+.mod-payment-configuration-theme1 .slider-wrapper {
+    margin-top: 10px
+}
+
+@media (min-width:768px) {
+    .mod-payment-configuration-theme1 .custom-select,
+    .mod-payment-configuration-theme1 .slider-wrapper {
+        margin-top: 15px
+    }
+}
+
+.mod-payment-configuration-theme1 .field {
+    padding-top: 10px;
+    border-top: 1px dashed;
+    border-top-color: #cecece;
+    margin: 20px 0
+}
+
+#apayment-configuration-1ccf1f422d967593aaca320a5dd4c8c9 {
+    width: 0
+}

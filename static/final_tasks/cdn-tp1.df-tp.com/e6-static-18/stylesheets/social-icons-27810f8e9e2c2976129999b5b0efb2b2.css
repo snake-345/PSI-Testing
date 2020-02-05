@@ -1,0 +1,139 @@
+.mod-social-icons-theme1 {
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0
+}
+
+@media (min-width:768px) {
+    .mod-social-icons-theme1 {
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:992px) {
+    .mod-social-icons-theme1 {
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:1200px) {
+    .mod-social-icons-theme1 {
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+.mod-social-icons-theme1 a {
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-top: 5px;
+    margin-right: 15px;
+    display: inline-block
+}
+
+.mod-social-icons-theme1 a:hover {
+    color: #696969
+}
+
+.mod-social-icons-theme1 .facebook-brand-color {
+    color: #1877f2
+}
+
+.mod-social-icons-theme1 .facebook-brand-color:hover {
+    color: #60a2f6
+}
+
+.mod-social-icons-theme1 .instagram-brand-color {
+    color: #231f20
+}
+
+.mod-social-icons-theme1 .instagram-brand-color:hover {
+    color: #4c4345
+}
+
+.mod-social-icons-theme1 .twitter-brand-color {
+    color: #1da1f2
+}
+
+.mod-social-icons-theme1 .twitter-brand-color:hover {
+    color: #65bff6
+}
+
+.mod-social-icons-theme1 .youtube-brand-color {
+    color: red
+}
+
+.mod-social-icons-theme1 .youtube-brand-color:hover {
+    color: #ff4d4d
+}
+
+.mod-social-icons-theme1 .pinterest-brand-color {
+    color: #bd081c
+}
+
+.mod-social-icons-theme1 .pinterest-brand-color:hover {
+    color: #f51c34
+}
+
+.mod-social-icons-theme1 .google-plus-brand-color {
+    color: #db4437
+}
+
+.mod-social-icons-theme1 .google-plus-brand-color:hover {
+    color: #e78178
+}
+
+.mod-social-icons-theme1 .flickr-brand-color {
+    color: #006add
+}
+
+.mod-social-icons-theme1 .flickr-brand-color:hover {
+    color: #2b90ff
+}
+
+.mod-social-icons-theme1 .yelp-brand-color {
+    color: #d32323
+}
+
+.mod-social-icons-theme1 .yelp-brand-color:hover {
+    color: #e45e5e
+}
+
+.mod-social-icons-theme1 .wordpress-brand-color {
+    color: #23282d
+}
+
+.mod-social-icons-theme1 .wordpress-brand-color:hover {
+    color: #444e58
+}
+
+#asocial-icons-27810f8e9e2c2976129999b5b0efb2b2 {
+    width: 0
+}

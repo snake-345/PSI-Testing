@@ -1,0 +1,91 @@
+.mod-featured-vehicles-theme1 .vehicle-title {
+    color: #444;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: none;
+    box-sizing: content-box
+}
+
+@media (min-width:768px) {
+    .mod-featured-vehicles-theme1 .vehicle-title {
+        font-size: 17px
+    }
+}
+
+@media (min-width:992px) {
+    .mod-featured-vehicles-theme1 .vehicle-title {
+        font-size: 17px
+    }
+}
+
+@media (min-width:1200px) {
+    .mod-featured-vehicles-theme1 .vehicle-title {
+        font-size: 17px
+    }
+}
+
+.mod-featured-vehicles-theme1 .vehicle_image {
+    display: block;
+    margin-bottom: 10px
+}
+
+.mod-featured-vehicles-theme1 .vehicle_title {
+    margin-bottom: 10px;
+    display: block
+}
+
+.mod-featured-vehicles-theme1 .vehicle_price {
+    margin-bottom: 15px
+}
+
+.mod-featured-vehicles-theme1 .vehicle_price_monthly-payment {
+    font-size: 13px;
+    text-align: right
+}
+
+@media (min-width:768px) {
+    .mod-featured-vehicles-theme1 .vehicle_price_monthly-payment {
+        font-size: 13px
+    }
+}
+
+@media (min-width:992px) {
+    .mod-featured-vehicles-theme1 .vehicle_price_monthly-payment {
+        font-size: 13px
+    }
+}
+
+@media (min-width:1200px) {
+    .mod-featured-vehicles-theme1 .vehicle_price_monthly-payment {
+        font-size: 13px
+    }
+}
+
+.mod-featured-vehicles-theme1 .vehicle_price .mod-vehicle-price-theme1.profile-one-price-no-label+.vehicle_price_monthly-payment {
+    text-align: left
+}
+
+.mod-featured-vehicles-theme1 .vehicle_buttons {
+    opacity: 1;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    margin-bottom: 20px
+}
+
+@media (min-width:992px) {
+    .mod-featured-vehicles-theme1 .vehicle_buttons {
+        opacity: 0
+    }
+}
+
+@media (min-width:992px) {
+    .mod-featured-vehicles-theme1 .vehicle:hover .vehicle_buttons {
+        opacity: 1
+    }
+}
+
+#afeatured-vehicles-879f98934f47b81dee39e40b26ac99a2 {
+    width: 0
+}

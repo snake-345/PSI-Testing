@@ -1,0 +1,247 @@
+.mod-form-theme1 {
+    position: relative
+}
+
+@media (max-width:767px) {
+    .mod-form-theme1 .date-picker-wrapper {
+        width: 100%;
+        max-width: 450px
+    }
+    .mod-form-theme1 .date-picker-wrapper .month1 {
+        width: 100%
+    }
+    .mod-form-theme1 .date-picker-wrapper .day {
+        text-align: center
+    }
+    .mod-form-theme1 .date-picker-wrapper tbody {
+        line-height: 25px
+    }
+}
+
+@media print {
+    .mod-form-theme1 {
+        display: none
+    }
+}
+
+.mod-form-theme1 .multi-step-form_links {
+    border-bottom: 0;
+    margin-bottom: 60px
+}
+
+.mod-form-theme1 .multi-step-form_link-wrapper {
+    width: 33.33333%
+}
+
+.mod-form-theme1 .multi-step-form .active .multi-step-form_link,
+.mod-form-theme1 .multi-step-form .active .multi-step-form_link:focus,
+.mod-form-theme1 .multi-step-form .active .multi-step-form_link:hover,
+.mod-form-theme1 .multi-step-form .disabled .multi-step-form_link,
+.mod-form-theme1 .multi-step-form .disabled .multi-step-form_link:focus,
+.mod-form-theme1 .multi-step-form .disabled .multi-step-form_link:hover,
+.mod-form-theme1 .multi-step-form .multi-step-form_link,
+.mod-form-theme1 .multi-step-form .multi-step-form_link:focus,
+.mod-form-theme1 .multi-step-form .multi-step-form_link:hover {
+    background: #ececec;
+    border-radius: 0;
+    border: 0;
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+    border-right: 1px solid #fff;
+    color: #888;
+    padding: 18px 10px 13px
+}
+
+.mod-form-theme1 .multi-step-form .active .multi-step-form_link,
+.mod-form-theme1 .multi-step-form .active .multi-step-form_link:focus,
+.mod-form-theme1 .multi-step-form .active .multi-step-form_link:hover {
+    font-weight: 700;
+    background: #ececec;
+    color: #222;
+    border-right-color: #fff
+}
+
+.mod-form-theme1 .multi-step-form_link_step-number {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background: #a5a5a5;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px
+}
+
+.mod-form-theme1 .multi-step-form_link_step-label {
+    display: block;
+    text-transform: uppercase
+}
+
+.mod-form-theme1 .multi-step-form_link_icon {
+    font-size: 18px
+}
+
+.mod-form-theme1 .multi-step-form_link_invalid-state {
+    display: none
+}
+
+.mod-form-theme1 .multi-step-form_link_valid-state {
+    display: none
+}
+
+.mod-form-theme1 .multi-step-form .active .multi-step-form_link_step-number {
+    background: #db2121;
+    color: #fff
+}
+
+.mod-form-theme1 .multi-step-form .__invalid .multi-step-form_link_default-state {
+    display: none
+}
+
+.mod-form-theme1 .multi-step-form .__invalid .multi-step-form_link_invalid-state {
+    display: inline
+}
+
+.mod-form-theme1 .multi-step-form .__valid .multi-step-form_link_default-state {
+    display: none
+}
+
+.mod-form-theme1 .multi-step-form .__valid .multi-step-form_link_valid-state {
+    display: inline
+}
+
+.mod-form-theme1 .multi-step-form .btn {
+    width: 49.2%
+}
+
+.mod-form-theme1 .multi-step-form .btn+.btn {
+    margin-left: 1.6%
+}
+
+.mod-form-theme1 .success-message {
+    background: #ececec;
+    padding: 20px 30px 20px 120px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    min-height: 100px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top
+}
+
+.mod-form-theme1 .success-message.__hide {
+    opacity: 0;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    transform: scale(1, 0)
+}
+
+.mod-form-theme1 .success-message_icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    border-radius: 50%;
+    background: #6f6f6f;
+    font-size: 50px;
+    padding-left: 9px;
+    line-height: 60px;
+    left: 30px;
+    color: #ececec;
+    -webkit-animation: scale .3s cubic-bezier(.175, .885, .32, 1.275);
+    animation: scale .3s cubic-bezier(.175, .885, .32, 1.275)
+}
+
+.mod-form-theme1 .success-message_icon_inner {
+    overflow: hidden;
+    -webkit-animation: width .75s cubic-bezier(1, .84, .3, .54);
+    animation: width .75s cubic-bezier(1, .84, .3, .54)
+}
+
+@-webkit-keyframes width {
+    0% {
+        width: 0
+    }
+    40% {
+        width: 0
+    }
+    100% {
+        width: 51px
+    }
+}
+
+@keyframes width {
+    0% {
+        width: 0
+    }
+    40% {
+        width: 0
+    }
+    100% {
+        width: 51px
+    }
+}
+
+@-webkit-keyframes scale {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.mod-form-theme1 .success-message_title {
+    font-weight: 700;
+    color: #222;
+    padding-top: 5px
+}
+
+.mod-form-theme1 .success-form {
+    opacity: .5;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    position: relative
+}
+
+.mod-form-theme1 .success-form:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+.mod-form-theme1 .success-form.__show {
+    opacity: 1
+}
+
+.mod-form-theme1 .success-form.__show:after {
+    display: none
+}

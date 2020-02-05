@@ -1,0 +1,239 @@
+.buttons {
+    margin: -3px;
+    font-size: 0
+}
+
+.buttons-wrapper {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0
+}
+
+@media (min-width:768px) {
+    .buttons-wrapper {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:992px) {
+    .buttons-wrapper {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:1200px) {
+    .buttons-wrapper {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+.buttons-wrapper.__sm {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0
+}
+
+@media (min-width:768px) {
+    .buttons-wrapper.__sm {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:992px) {
+    .buttons-wrapper.__sm {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:1200px) {
+    .buttons-wrapper.__sm {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+.buttons-wrapper.__lg {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0
+}
+
+@media (min-width:768px) {
+    .buttons-wrapper.__lg {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:992px) {
+    .buttons-wrapper.__lg {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:1200px) {
+    .buttons-wrapper.__lg {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+.buttons-wrapper.__xl {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0
+}
+
+@media (min-width:768px) {
+    .buttons-wrapper.__xl {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:992px) {
+    .buttons-wrapper.__xl {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+@media (min-width:1200px) {
+    .buttons-wrapper.__xl {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+}
+
+.buttons_group {
+    width: 100%;
+    padding: 3px
+}
+
+@media (max-width:767px) {
+    .buttons_group .btn {
+        min-width: 0 !important
+    }
+}
+
+@media (min-width:768px) {
+    .buttons_group_vertical {
+        width: auto
+    }
+}
+
+.buttons .buttons_dropdown {
+    margin-top: -1px;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 16px 0
+}
+
+.buttons .buttons_dropdown_link {
+    padding: 11px 42px 11px 65px;
+    position: relative
+}
+
+.buttons .buttons_dropdown_link:before {
+    position: absolute;
+    font-size: 1.6rem;
+    left: 22px
+}
+
+.buttons>.btn,
+.buttons>.buttons_share {
+    margin: 3px
+}
+
+.buttons_share>.btn {
+    min-width: 100%
+}
+
+.btn-group .btn {
+    margin: 0;
+    float: none;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.btn-group>.btn-group {
+    float: none
+}
+
+.btn-group-justified .btn {
+    white-space: nowrap
+}
+
+.action-buttons-share-form {
+    padding-bottom: 30px
+}
+
+.action-buttons-share-form_icon {
+    font-size: 1.733rem;
+    color: #222;
+    margin-bottom: 30px
+}
+
+.action-buttons-share-form_separator {
+    font-size: 1.733rem;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0
+}
+
+@media (min-width:768px) {
+    .action-buttons-share-form_separator {
+        display: inline-block;
+        margin: 0 20px;
+        vertical-align: middle
+    }
+}
+
+.action-buttons-share-form .btn {
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .action-buttons-share-form .btn {
+        width: auto
+    }
+}
+
+#abuttons_css-buttons-b9f840940149eae3e35f48e193bae0e0 {
+    width: 0
+}
