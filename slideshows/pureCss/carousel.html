@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pureCSS</title>
+	<style>
+		*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+		html, body { height: 100%; }
+		body { margin: 0; font: 16px/1.3 sans-serif; }
+
+		.text-center {
+			text-align: center;
+		}
+
+		.psi-friendly-slideshow {
+
+		}
+
+		.psi-friendly-slideshow__slider {
+			overflow: hidden;
+		}
+
+		.psi-friendly-slideshow__slides-list {
+			white-space: nowrap;
+			font-size: 0;
+			position: relative;
+			transition: all .3s ease;
+			height: 100%;
+			display: flex;
+		}
+
+		.psi-friendly-slideshow__slides-list_no-transition {
+			transition: none;
+		}
+
+		.psi-friendly-slideshow__slide {
+			display: inline-block;
+			vertical-align: top;
+			flex: 0 0 33.3333333333%;
+			width: 33.3333333333%;
+			height: 100%;
+			text-align: center;
+			font-size: 1rem;
+		}
+
+
+		.psi-friendly-slideshow__next-arrow,
+		.psi-friendly-slideshow__prev-arrow,
+		.psi-friendly-slideshow__dot {
+			display: inline-block;
+			width: 25px;
+			padding: 5px 0;
+		}
+
+		img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<script>
+	window.slides = [];
+
+	for (let i = 0, l = getRandomIntInclusive(10, 15); i < l; i++) {
+		slides.push({
+			width: 200,
+			height: getRandomIntInclusive(1, 2) * 100,
+		});
+	}
+
+	function getRandomIntInclusive(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+	}
+</script>
+<div class="psi-friendly-slideshow">
+	<div class="psi-friendly-slideshow__slider">
+		<div class="psi-friendly-slideshow__slides-list">
+			<script>
+				slides.forEach((slide, i) => {
+					document.write('<div class="psi-friendly-slideshow__slide">');
+					document.write(`<img class="psi-friendly-slideshow__slide-img" src="//fakeimg.pl/${slide.width}x${slide.height}/?text=[${i + 1}] ${slide.width}x${slide.height}" alt="">`);
+					document.write(`<h2>Slide ${i + 1}</h2>`);
+					document.write('</div>');
+				});
+			</script>
+		</div>
+	</div>
+	<div class="text-center">
+		<script>
+			slides.forEach((slide, i) => {
+				document.write(`<a href="#" class="psi-friendly-slideshow__dot">${i + 1}</a>`);
+			});
+		</script>
+	</div>
+</div>
+
+
+<p style="margin-top: 200px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid asperiores commodi culpa cumque error facilis fugiat impedit, labore maiores neque nobis nulla porro quam quas quo reiciendis saepe vitae.</p>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	window.addEventListener('load', makeSlider);
+
+	function makeSlider() {
+		const slider = document.querySelector('.psi-friendly-slideshow');
+		const slidesList = slider.querySelector('.psi-friendly-slideshow__slides-list');
+		let beforeClonesCount = slider.querySelectorAll('.psi-friendly-slideshow__slide_before-clone').length;
+		let current = 1;
+
+
+		_handleEvents();
+
+		function _handleEvents() {
+			slider.querySelectorAll('.psi-friendly-slideshow__dot').forEach((dot, i) => {
+				dot.addEventListener('click', event => {
+					goTo(i + 1);
+					event.preventDefault();
+				});
+			});
+		}
+
+		function goTo(index) {
+			current = index;
+			slidesList.style.transform = `translateX(${(index + beforeClonesCount - 1) * -33.3333333333}%)`;
+		}
+	}
+</script>
+</body>
+</html>
