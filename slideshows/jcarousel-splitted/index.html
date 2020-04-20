@@ -39,11 +39,14 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="jcarousel.js"></script>
+<script src="jcarouselSwipe.js"></script>
 <script>
 	(function jCarouselInit() {
 		const $slider = $('.jcarousel');
 
-		$slider.jcarousel();
+		$slider
+			.jcarousel()
+			.jcarouselSwipe();
 
 		$('.prev').on('click', event => {
 			$slider.jcarousel('scroll', '-=1');
