@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>slick</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.slick {
+			width: 500px;
+			margin-left: 20px;
+		}
+
+		.slick-next:before, .slick-prev:before {
+			color: #000;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div class="slick">
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 1" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 2" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 3" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 4" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 5" alt=""></div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+	(function() {
+		$('.slick').slick();
+	}());
+</script>
+</body>
+</html>

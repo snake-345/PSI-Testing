@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jcarousel</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<style>
+		.owl-carousel {
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+<div class="owl-carousel">
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 1" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 2" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 3" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 4" alt=""></div>
+	<div class="slide"><img src="//fakeimg.pl/500x300/?text=Slide 5" alt=""></div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+	(function() {
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			nav: true,
+			dots: true,
+		});
+	}());
+</script>
+</body>
+</html>

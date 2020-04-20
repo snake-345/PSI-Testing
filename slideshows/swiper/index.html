@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Swiper</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
+	<style>
+		.swiper-container {
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="//fakeimg.pl/500x300/?text=Slide 1" alt=""></div>
+		<div class="swiper-slide"><img src="//fakeimg.pl/500x300/?text=Slide 2" alt=""></div>
+		<div class="swiper-slide"><img src="//fakeimg.pl/500x300/?text=Slide 3" alt=""></div>
+		<div class="swiper-slide"><img src="//fakeimg.pl/500x300/?text=Slide 4" alt=""></div>
+		<div class="swiper-slide"><img src="//fakeimg.pl/500x300/?text=Slide 5" alt=""></div>
+	</div>
+
+	<div class="swiper-pagination"></div>
+
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+<script>
+	(function() {
+		var mySwiper = new Swiper ('.swiper-container', {
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	}());
+</script>
+</body>
+</html>
