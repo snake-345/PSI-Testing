@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		iframe {
+			border: 0;
+			width: 100%;
+			outline: 2px dashed;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Test iFrame approach</h1>
+	<div class="injected-html"></div>
+</div>
+
+<template id="test-template">
+	<div class="injected-content" style="overflow: hidden;">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://raw.githack.com/que-etc/resize-observer-polyfill/master/dist/ResizeObserver.global.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			body {
+				color: green;
+			}
+
+			h1 {
+				transition: all .3s ease;
+				padding-top: 0;
+			}
+
+			h1:hover {
+				padding-top: 30px;
+			}
+		</style>
+		<h1>I'm injected html from template</h1>
+		<div class="row">
+			<div class="col-xs-6">Left bootstrap column</div>
+			<div class="col-xs-6">Right bootstrap column</div>
+		</div>
+
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			Button with data-target
+		</button>
+		<div class="collapse" id="collapseExample">
+			<div class="well">
+				...
+			</div>
+		</div>
+		<script>
+			window.addEventListener("load", function() {
+				var oldHeight = 0;
+
+				var resizeObserver = new ResizeObserver(function(entries) {
+					var entry = entries[0];
+					var height = entry.contentRect.height;
+
+					if (oldHeight !== height) {
+						oldHeight = height;
+
+						window.parentIFrame.style.height = height + 'px';
+					}
+				});
+
+				resizeObserver.observe(document.querySelector('.injected-content'));
+			});
+		</script>
+	</div>
+</template>
+
+<script>
+	(function () {
+		var injectedHTML = document.querySelector('.injected-html');
+		var iframe = document.createElement('iframe');
+
+		injectedHTML.appendChild(iframe);
+
+		iframe.contentWindow.document.open();
+		iframe.contentWindow.document.write(document.querySelector('#test-template').innerHTML);
+		iframe.contentWindow.document.close();
+		iframe.contentWindow.parentIFrame = iframe;
+	}());
+</script>
+
+</body>
+</html>
